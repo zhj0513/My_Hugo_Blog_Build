@@ -7,6 +7,12 @@ image: "xxx.png"
 tags:
   - tag_example
 categories:
-    - 草稿分类
+  - 草稿分类
 ---
+
+
+
+引用static目录下的图片：
+
+![](/img/github-alt.svg)
 

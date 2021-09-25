@@ -7,7 +7,7 @@ image: "gakki.png"
 tags:
   - hugo
 categories:
-    - 部署
+  - 部署
 ---
 
 # Hugo + Stack 博客搭建指南
@@ -50,12 +50,12 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-t
 # 主题有更新时，执行git submodule update
 ```
 
-复制`MySite\themes\hugo-theme-stack\exampleSite\config.yaml`到`MySite\`目录下，删除默认的`config.toml`
+复制`MySite\themes\hugo-theme-stack\exampleSite\config.yaml`到`MySite\`下，删除默认的`config.toml`。复制`MySite\themes\hugo-theme-stack\exampleSite\content\`目录下的文件夹到`MySite\content\`
 
-复制`MySite\themes\hugo-theme-stack\exampleSite\content\`目录下的文件夹到`MySite\content\`
+**config.yaml修改：**
 
 ```
-# config.yaml修改
+
 theme: hugo-theme-stack  
 favicon: /img/github-alt.svg  # favicon文件需MySite\static\img\下
 comments:
@@ -93,10 +93,10 @@ hugo new post/my-first-post.md
 hugo server -D
 ```
 
-打开 [**http://localhost:1313/**](http://localhost:1313/) ，即可看到实时预览的站点（在本地的任何修改，将即时更新）。
+打开 [**http://localhost:1313/**](http://localhost:1313/) ，即可看到站点页面（本地修改将即时更新）。
 
 ## 其他
 
 - [Quick Start · Hugo](https://gohugo.io/getting-started/quick-start/)
 - [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/):yum:
-
+- [hugo-theme-stack示例](https://theme-stack.jimmycai.com/)
