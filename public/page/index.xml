@@ -2,37 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Gakkiの一般男性</title>
-    <link>https://example.com/page/</link>
+    <link>https://zhj0513.github.io/page/</link>
     <description>Recent content in Pages on Gakkiの一般男性</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zhj0513.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://zhj0513.github.io/about/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhj0513.github.io/about/</guid>
+      <description>Python程序员一名（努力学习golang中…）
+技术栈：Flask、Celery、MySQL、Redis、OpenStack、Docker
+研究方向：云计算/数据挖掘
+学习方向：Devops、K8s
+主要项目经历：
+  OneKeeper数据库运维平台
+一个简化数据库运维的平台，帮助DBA快速定位及解决常见数据库问题。
+  HikCube私有云平台
+一个基于OpenStack的超融合私有云平台，以云主机作为载体，按需提供计算、存储、网络资源。
+  云平台监控告警
+一个插件式的监控告警平台，监控云平台服务及云主机运行状况。
+  数据中心管理平台
+一个基于OpenLDAP的统一登录平台，支持云计算、大数据平台统一登录及权限配置，支持集成第三方平台。
+  机器学习可视化平台
+一个支持机器学习算子编排的平台。通过拖动、连接算子，支持可视化地处理数据、训练模型、预测评估。
+  爱好：钓鱼、新垣结衣、乃木坂46
+母校：浙工大2019届
+联系邮箱：1264728987@qq.com</description>
+    </item>
+    
     <item>
       <title>Archives</title>
-      <link>https://example.com/archives/</link>
+      <link>https://zhj0513.github.io/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/archives/</guid>
+      <guid>https://zhj0513.github.io/archives/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://example.com/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
-    </item>
-    
-    <item>
       <title>Search</title>
-      <link>https://example.com/search/</link>
+      <link>https://zhj0513.github.io/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/search/</guid>
+      <guid>https://zhj0513.github.io/search/</guid>
       <description></description>
     </item>
     

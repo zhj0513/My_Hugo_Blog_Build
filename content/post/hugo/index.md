@@ -95,7 +95,42 @@ hugo server -D
 
 打开 [**http://localhost:1313/**](http://localhost:1313/) ，即可看到站点页面（本地修改将即时更新）。
 
-## 其他
+# 博客部署及更新
+
+## 博客部署至github
+
+修改config.yaml文件：
+
+```bash
+baseURL = "https://<username>.github.io/"
+```
+
+**节点目录**执行命令：
+
+```
+hugo  # 生成静态页面文件至public/目录
+```
+
+进入public文件夹，使用git上传页面文件：
+
+```bash
+cd public
+git init    ##初始化仓库
+git remote add origin https://github.com/zhj0513/zhj0513.github.io.git    ##链接远程仓库
+git add .
+git commit -m "first commit"
+git push -u origin master
+```
+
+至此，部署完成，可从`https://<username>.github.io/`访问博客
+
+## 博客更新：
+
+1. 本地使用Markdown新增、修改博客
+2. 在站点目录执行`hugo`命令更新静态页面
+3. 进入public文件夹，使用git上传页面文件
+
+# 其他
 
 - [Quick Start · Hugo](https://gohugo.io/getting-started/quick-start/)
 - [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/):yum:

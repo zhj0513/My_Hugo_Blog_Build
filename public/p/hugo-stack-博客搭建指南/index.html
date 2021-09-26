@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于Hugo和hugo-theme-stack主题的博客搭建过程'><title>Hugo &#43; Stack 博客搭建指南</title>
+
+<link rel='canonical' href='https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Hugo &#43; Stack 博客搭建指南'>
+<meta property='og:description' content='基于Hugo和hugo-theme-stack主题的博客搭建过程'>
+<meta property='og:url' content='https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/'>
+<meta property='og:site_name' content='Gakkiの一般男性'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2021-09-21T05:37:05&#43;08:00'/><meta property='article:modified_time' content='2021-09-21T05:37:05&#43;08:00'/><meta property='og:image' content='https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/gakki.png' />
+<meta name="twitter:site" content="@coderzhj">
+    <meta name="twitter:creator" content="@coderzhj"><meta name="twitter:title" content="Hugo &#43; Stack 博客搭建指南">
+<meta name="twitter:description" content="基于Hugo和hugo-theme-stack主题的博客搭建过程"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/gakki.png' />
+    <link rel="shortcut icon" href="/img/github-alt.svg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://zhj0513.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">
+                <img src="/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/gakki_hu8caed94f076a5cecb8d68818f7afd37c_1887335_800x0_resize_box_3.png"
+                        srcset="/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/gakki_hu8caed94f076a5cecb8d68818f7afd37c_1887335_800x0_resize_box_3.png 800w, /p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/gakki_hu8caed94f076a5cecb8d68818f7afd37c_1887335_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="400" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo &#43; Stack 博客搭建指南" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E9%83%A8%E7%BD%B2/" style="background-color: #2a9d8f; color: #fff;">
+                部署
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">Hugo &#43; Stack 博客搭建指南</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        基于Hugo和hugo-theme-stack主题的博客搭建过程
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 21, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="hugo--stack-博客搭建指南">Hugo + Stack 博客搭建指南</h1>
+<p>Hugo是基于Go语言开发的静态网站构建工具。本博客采用hugo-theme-stack主题搭建。</p>
+<h2 id="hugo下载安装">Hugo下载安装</h2>
+<ol>
+<li>打开 Hugo 官方 GitHub 的 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    ><strong>Releases</strong></a> 页面</li>
+<li>选择最新的版本下载（选择 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>）</li>
+<li>将压缩包内的 <code>hugo.exe</code> 文件解压至 <code>D:\Hugo</code> 文件夹目录下</li>
+<li>在 <code>我的电脑</code>鼠标右键，打开属性</li>
+<li>依次点击 <code>高级系统设置</code> - <code>环境变量</code> ，编辑系统变量中的 <code>Path</code></li>
+<li>在环境变量界面中双击空白行，添加 <code>D:\Hugo</code>，点击确定</li>
+</ol>
+<p>确认 Hugo 是否安装成功：</p>
+<pre tabindex="0"><code>hugo version
+</code></pre><h2 id="创建站点">创建站点</h2>
+<p>切换某个目录下，创建站点文件夹：</p>
+<pre tabindex="0"><code>hugo new site MySite
+</code></pre><h2 id="主题下载">主题下载</h2>
+<p>主题的挑选可以到官方的 <a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    ><strong>主题页面</strong></a></p>
+<p>本博客采用<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/"  target="_blank" rel="noopener"
+    >hugo-theme-stack主题</a>，该主题由国人开发维护，社区比较活跃， 强力推荐。</p>
+<pre tabindex="0"><code>cd MySite
+git init
+git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
+# 主题有更新时，执行git submodule update
+</code></pre><p>复制<code>MySite\themes\hugo-theme-stack\exampleSite\config.yaml</code>到<code>MySite\</code>下，删除默认的<code>config.toml</code>。复制<code>MySite\themes\hugo-theme-stack\exampleSite\content\</code>目录下的文件夹到<code>MySite\content\</code></p>
+<p><strong>config.yaml修改：</strong></p>
+<pre tabindex="0"><code>
+theme: hugo-theme-stack  
+favicon: /img/github-alt.svg  # favicon文件需MySite\static\img\下
+comments:
+        enabled: false  # 关闭评论
+</code></pre><p>更多配置请见：<a class="link" href="https://docs.stack.jimmycai.com/zh/configuration/"  target="_blank" rel="noopener"
+    >hugo-theme-stack主题配置</a></p>
+<h2 id="创建文章">创建文章</h2>
+<p>使用如下命令，创建一篇文章：</p>
+<pre tabindex="0"><code># 创建带有hugo front matter的文章，draft（草稿）
+# 在front matter添加tags、categories、image,可为文章添加标签、分类、特色图片
+hugo new post/my-first-post.md
+</code></pre><p>2种方式创建含图片的文章：</p>
+<ol>
+<li>
+<p>在<code>content/post</code>目录下创建文件夹，文件夹下包含图片文件和文章，文章名需为index.md(Hugo Page Bundles)</p>
+</li>
+<li>
+<p>直接在<code>content/post</code>目录下建立文章文件，图片引用<code>MySite/static</code>下的图片</p>
+<pre tabindex="0"><code>例如引用MySite/static/img/github-alt.svg图片：![图片名称](/img/github-alt.svg)
+</code></pre></li>
+</ol>
+<h2 id="启动-hugo-服务">启动 Hugo 服务</h2>
+<p>使用以下命名启动 Hugo 本地预览服务：</p>
+<pre tabindex="0"><code># -D表示显示草稿
+hugo server -D
+</code></pre><p>打开 <a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
+    ><strong>http://localhost:1313/</strong></a> ，即可看到站点页面（本地修改将即时更新）。</p>
+<h1 id="博客部署及更新">博客部署及更新</h1>
+<h2 id="博客部署至github">博客部署至github</h2>
+<p>修改config.yaml文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;https://&lt;username&gt;.github.io/&#34;</span>
+</code></pre></div><p><strong>节点目录</strong>执行命令：</p>
+<pre tabindex="0"><code>hugo  # 生成静态页面文件至public/目录
+</code></pre><p>进入public文件夹，使用git上传页面文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> public
+git init    <span class="c1">##初始化仓库</span>
+git remote add origin https://github.com/zhj0513/zhj0513.github.io.git    <span class="c1">##链接远程仓库</span>
+git add .
+git commit -m <span class="s2">&#34;first commit&#34;</span>
+git push -u origin master
+</code></pre></div><p>至此，部署完成，可从<code>https://&lt;username&gt;.github.io/</code>访问博客</p>
+<h2 id="博客更新">博客更新：</h2>
+<ol>
+<li>本地使用Markdown新增、修改博客</li>
+<li>在站点目录执行<code>hugo</code>命令更新静态页面</li>
+<li>进入public文件夹，使用git上传页面文件</li>
+</ol>
+<h1 id="其他">其他</h1>
+<ul>
+<li><a class="link" href="https://gohugo.io/getting-started/quick-start/"  target="_blank" rel="noopener"
+    >Quick Start · Hugo</a></li>
+<li><a class="link" href="http://www.emoji-cheat-sheet.com/"  target="_blank" rel="noopener"
+    >Emoji cheat sheet</a>:yum:</li>
+<li><a class="link" href="https://theme-stack.jimmycai.com/"  target="_blank" rel="noopener"
+    >hugo-theme-stack示例</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">hugo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Gakkiの一般男性
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hugo下载安装">Hugo下载安装</a></li>
+    <li><a href="#创建站点">创建站点</a></li>
+    <li><a href="#主题下载">主题下载</a></li>
+    <li><a href="#创建文章">创建文章</a></li>
+    <li><a href="#启动-hugo-服务">启动 Hugo 服务</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#博客部署至github">博客部署至github</a></li>
+    <li><a href="#博客更新">博客更新：</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

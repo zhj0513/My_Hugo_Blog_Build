@@ -2,30 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Gakkiの一般男性</title>
-    <link>https://example.com/post/</link>
+    <link>https://zhj0513.github.io/post/</link>
     <description>Recent content in Posts on Gakkiの一般男性</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Sep 2021 05:37:05 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Sep 2021 05:37:05 +0800</lastBuildDate><atom:link href="https://zhj0513.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://example.com/p/my-first-post/</link>
+      <title>Hugo &#43; Stack 博客搭建指南</title>
+      <link>https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
       <pubDate>Tue, 21 Sep 2021 05:37:05 +0800</pubDate>
       
-      <guid>https://example.com/p/my-first-post/</guid>
-      <description>Hugo 极简搭建指南 Hugo 是一个搭建网页的框架，有极高的构建和部署速度。至于在 Windows 下的安装配置，官方文档并未详细说明，第三方教程也参差不齐，所以我写了这一篇教程。
-下载安装#  打开 Hugo 官方 GitHub 的 Releases 页面 选择最新的版本下载（选择 hugo_xxx_Windows-64/32bit.zip） 将压缩包内的 hugo.exe 文件解压至 D:\hugo 文件夹目录下 在 文件资源管理器（即 我的电脑）中空白处点击鼠标右键，打开属性 依次点击 高级系统设置 - 环境变量 ，双击打开系统变量中的 Path 在环境变量界面中双击空白行，添加 D:\hugo，点击确定  打开命令提示符，输入语句：
-hugo version
-以确认 Hugo 是否安装成功（如果安装成功就能看到版本号）
-创建站点# 切换至相应目录下，使用如下语句：
-hugo new site quickstart
-这将在一个叫 quickstart 的文件夹内创建一个新的 Hugo 站点。
-添加主题# 主题的挑选可以到官方的 主题页面
-直接跳转至 GitHub 下载主题文件夹，解压至站点的 theme 目录下即可。
-执行如下命令，将主题添加至站点的配置文件中：
-echo &amp;lsquo;theme = &amp;ldquo;主题文件夹的名字&amp;rdquo;&amp;rsquo; &amp;raquo; config.toml
-创建文章# 使用如下命令，创建一篇文章：
-hugo new posts/my-first-post.</description>
+      <guid>https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+      <description>Hugo + Stack 博客搭建指南 Hugo是基于Go语言开发的静态网站构建工具。本博客采用hugo-theme-stack主题搭建。
+Hugo下载安装  打开 Hugo 官方 GitHub 的 Releases 页面 选择最新的版本下载（选择 hugo_extended_0.88.1_Windows-64bit.zip） 将压缩包内的 hugo.exe 文件解压至 D:\Hugo 文件夹目录下 在 我的电脑鼠标右键，打开属性 依次点击 高级系统设置 - 环境变量 ，编辑系统变量中的 Path 在环境变量界面中双击空白行，添加 D:\Hugo，点击确定  确认 Hugo 是否安装成功：
+hugo version 创建站点 切换某个目录下，创建站点文件夹：
+hugo new site MySite 主题下载 主题的挑选可以到官方的 主题页面
+本博客采用hugo-theme-stack主题，该主题由国人开发维护，社区比较活跃， 强力推荐。
+cd MySite git init git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack # 主题有更新时，执行git submodule update 复制MySite\themes\hugo-theme-stack\exampleSite\config.yaml到MySite\下，删除默认的config.toml。复制MySite\themes\hugo-theme-stack\exampleSite\content\目录下的文件夹到MySite\content\
+config.yaml修改：
+ theme: hugo-theme-stack favicon: /img/github-alt.svg # favicon文件需MySite\static\img\下 comments: enabled: false # 关闭评论 更多配置请见：hugo-theme-stack主题配置</description>
     </item>
     
   </channel>

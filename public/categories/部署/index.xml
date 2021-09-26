@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on Gakkiの一般男性</title>
-    <link>https://zhj0513.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on Gakkiの一般男性</description>
+    <title>部署 on Gakkiの一般男性</title>
+    <link>https://zhj0513.github.io/categories/%E9%83%A8%E7%BD%B2/</link>
+    <description>Recent content in 部署 on Gakkiの一般男性</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Sep 2021 05:37:05 +0800</lastBuildDate><atom:link href="https://zhj0513.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Sep 2021 05:37:05 +0800</lastBuildDate><atom:link href="https://zhj0513.github.io/categories/%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Stack 博客搭建指南</title>
       <link>https://zhj0513.github.io/p/hugo-stack-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
