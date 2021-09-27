@@ -193,4 +193,12 @@ markup:
         ordered: true
         startLevel: 2
     highlight:
-        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        hl_Lines: ""
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: false
+        noClasses: true
+        style: dracula
+        tabWidth: 4
